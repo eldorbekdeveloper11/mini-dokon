@@ -291,7 +291,7 @@ function renderContactSection(){
 
 function renderAll(){ renderBanner(); renderCatButtons(); renderCards(); renderContactSection(); }
 
-fetch('data.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
+fetch('./data.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
   .then(function(d){ 
     STORE = d; 
     renderBanner(); 
