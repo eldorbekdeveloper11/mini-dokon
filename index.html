@@ -292,7 +292,12 @@ function renderContactSection(){
 function renderAll(){ renderBanner(); renderCatButtons(); renderCards(); renderContactSection(); }
 
 fetch('data.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
-  .then(function(d){ STORE = d; renderAll(); })
+  .then(function(d){ 
+    STORE = d; 
+    renderBanner(); 
+    renderCatButtons(); 
+    renderProducts(STORE.products); // Yoki mahsulotlar va boshqa qismlarni ekranga chiqaruvchi funksiyangiz qanday nomlangan bo'lsa
+})
   .catch(function(){ document.getElementById('grid').innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--muted)">data.json topilmadi. Fayllarni repo ildiziga to\'g\'ri joylaganingizni tekshiring.</p>'; });
 
 document.getElementById('q').addEventListener('input', applyFilter);
