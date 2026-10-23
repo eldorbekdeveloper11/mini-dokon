@@ -1,0 +1,16 @@
+{
+  "banner": "",
+  "categories": ["Oziq-ovqat", "Ichimlik", "Shirinlik", "Gigiyena", "Xoʻjalik", "Maktab bozor"],
+  "products": [
+    {"name": "Yog' 1 l", "price": 22000, "cat": "Oziq-ovqat"},
+    {"name": "Non", "price": 5000, "cat": "Oziq-ovqat"},
+    {"name": "Daftar 48 varoq", "price": 5000, "cat": "Maktab bozor"},
+    {"name": "Coca-Cola 1,5", "price": 16000, "cat": "Ichimlik"}
+  ],
+  "contacts": [
+    {"name": "Muzaffar", "phone": "+998953435307"},
+    {"name": "Shavkat", "phone": "+998950768178"},
+    {"name": "Eldor", "phone": "+998958565307"}
+  ],
+  "address": "Jarqoʻrgʻon tumani Bobotogʻ mahallasi"
+}
